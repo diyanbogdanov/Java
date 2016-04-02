@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Palindrome">
+  <ClassDiagramComponents>
+    <Class name="Palindrome" package="palindrome" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="fiveDigit" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="fiveDigit"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setFiveDigit" returnType="void" visibility="public">
+          <Argument type="int" name="fiveDigit"/>
+        </Method>
+        <Method name="getFiveDigit" returnType="int" visibility="public"/>
+        <Method name="isPalindrome" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

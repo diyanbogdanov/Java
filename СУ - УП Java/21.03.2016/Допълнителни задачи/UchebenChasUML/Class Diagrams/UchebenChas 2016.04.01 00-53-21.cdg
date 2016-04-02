@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UchebenChas">
+  <ClassDiagramComponents>
+    <Class name="UchebenChas" package="uchebenchas" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="naimenovanie" type="String" visibility="private"/>
+        <Field name="minutiProdalzitelnost" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="naimenovanie"/>
+          <Argument type="int" name="minutiProdalzitelnost"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="UchebenChas" name="uchebenChas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setNaimenovanie" returnType="void" visibility="public">
+          <Argument type="String" name="naimenovanie"/>
+        </Method>
+        <Method name="getNaimenovanie" returnType="String" visibility="public"/>
+        <Method name="setMinutiProdalzitelnost" returnType="void" visibility="public">
+          <Argument type="int" name="minutiProdalzitelnost"/>
+        </Method>
+        <Method name="getMinutiProdalzitelnost" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

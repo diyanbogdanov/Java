@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Date">
+  <ClassDiagramComponents>
+    <Class name="Date" package="date" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="month" type="int" visibility="private"/>
+        <Field name="day" type="int" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="monthValue"/>
+          <Argument type="int" name="dayValue"/>
+          <Argument type="int" name="yearValue"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setMonth" returnType="void" visibility="public">
+          <Argument type="int" name="monthValue"/>
+        </Method>
+        <Method name="setDay" returnType="void" visibility="public">
+          <Argument type="int" name="dayValue"/>
+        </Method>
+        <Method name="setYear" returnType="void" visibility="public">
+          <Argument type="int" name="yearValue"/>
+        </Method>
+        <Method name="displayDate" returnType="String" visibility="public"/>
+        <Method name="addOneDay" returnType="void" visibility="public"/>
+        <Method name="printDates" returnType="void" visibility="public">
+          <Argument type="Date" name="startDate"/>
+          <Argument type="Date" name="endDate"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
