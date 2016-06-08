@@ -75,7 +75,7 @@
         <Property name="text" type="java.lang.String" value="Points"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPointsMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPointsActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnLines">
@@ -84,7 +84,7 @@
         <Property name="actionCommand" type="java.lang.String" value="Lines"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnLinesMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLinesActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="pntAreaScroll">

@@ -29,17 +29,17 @@ public class GUI extends javax.swing.JFrame {
         });
 
         btnPoints.setText("Points");
-        btnPoints.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPointsMouseClicked(evt);
+        btnPoints.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPointsActionPerformed(evt);
             }
         });
 
         btnLines.setText("Lines");
         btnLines.setActionCommand("Lines");
-        btnLines.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnLinesMouseClicked(evt);
+        btnLines.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLinesActionPerformed(evt);
             }
         });
 
@@ -96,7 +96,7 @@ public class GUI extends javax.swing.JFrame {
         mixHeavyObjects(hsArray);
     }//GEN-LAST:event_btnShuffleMouseClicked
 
-    private void btnPointsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPointsMouseClicked
+    private void btnPointsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPointsActionPerformed
         // TODO add your handling code here:
         String text = "";
         for (int i = 0; i < hsArray.length; i++) {
@@ -105,9 +105,9 @@ public class GUI extends javax.swing.JFrame {
             }
         }
         pntArea.setText(text);
-    }//GEN-LAST:event_btnPointsMouseClicked
+    }//GEN-LAST:event_btnPointsActionPerformed
 
-    private void btnLinesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLinesMouseClicked
+    private void btnLinesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLinesActionPerformed
         // TODO add your handling code here:
         String text = "";
         for (int i = 0; i < hsArray.length; i++) {
@@ -116,14 +116,14 @@ public class GUI extends javax.swing.JFrame {
             }
         }
         lineArea.setText(text);
-    }//GEN-LAST:event_btnLinesMouseClicked
+    }//GEN-LAST:event_btnLinesActionPerformed
 
     @SuppressWarnings("empty-statement")
     public static void main(String args[]) {
         Point pointA = new Point(3,1,1);
         Point pointB = new Point(5,3,3);
-        Line myLineA = new Line(pointA, new Point(7,5,5));
-        Line myLineB = new Line(pointB, new Point(9,7,7));
+        Line myLineA = new Line(3,1,1, new Point(7,5,5));
+        Line myLineB = new Line(5,3,3, new Point(9,7,7));
         hsArray = new HeavyElement[] {pointA, pointB, myLineA, myLineB};
         
         mixHeavyObjects(hsArray);
